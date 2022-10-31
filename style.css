@@ -1,0 +1,920 @@
+@charset "UTF-8";
+
+/*-------------------------
+共通
+-------------------------*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #222;
+}
+
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  padding-left: 0;
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+h2 {
+  margin: 0;
+}
+
+.font-change {
+  font-family: 'YuMincho', '游明朝体';
+}
+
+.margin-note {
+  margin-bottom: 100px;
+}
+
+/*-------------------------
+  ヘッダー
+-------------------------*/
+
+.sp-header {
+  display: none;
+}
+
+.pc-header {
+  margin: 15px 70px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sp-nav {
+  display: none;
+}
+
+nav ul {
+  font-size: 1.2rem;
+  display: flex;
+  background-color: #234795;
+  font-weight: bold;
+  justify-content: center;
+}
+
+nav a {
+  color: #fff;
+}
+
+nav li {
+  padding: 15px 35px;
+  border-left: solid 2px #fff;
+  border-right: solid 2px #fff;
+}
+
+li+li {
+  border-left: 0;
+  border-right: 2px solid #fff;
+}
+
+/*-------------------------
+  メイン画像部分
+-------------------------*/
+
+.top-contents {
+  position: relative;
+}
+
+.top-img img {
+  width: 100%;
+}
+
+.top-text {
+  top: 22%;
+  right: 5%;
+  color: #fff;
+  position: absolute;
+  text-shadow: 0 0 10px #080808;
+}
+
+.top-text p:nth-of-type(1) {
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.top-text p:nth-of-type(2) {
+  text-align: center;
+  font-size: 2rem;
+}
+
+h3 {
+  margin: 0;
+}
+
+/*-------------------------
+  introduction
+-------------------------*/
+
+main {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.intro-title {
+  font-size: 3rem;
+  background: url("image/bunner-4.jpg") 0 0 / cover no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 3px 0;
+  margin-top: 20px;
+}
+
+.intro-contents {
+  display: flex;
+  padding: 20px;
+}
+
+.intro-contents table {
+  width: 96%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  border: solid 3px #d4dff4;
+}
+
+caption {
+  font-size: 1.3rem;
+  background-color: #234795;
+  color: #fff;
+  width: 24%;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.intro-contents th {
+  color: #fff;
+  font-size: 2rem;
+  width: 36%;
+  background: url("image/bunner-2.jpg") 0 0 / cover no-repeat;
+}
+
+.intro-contents td {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #222;
+}
+
+.intro-img {
+  padding: 20px;
+  margin-left: 50px;
+}
+
+.intro-img img {
+  width: 97%;
+}
+
+.introduction-consept {
+  text-align: center;
+}
+
+.introduction-consept h2 {
+  font-size: 2rem;
+  color: #434343;
+}
+
+.introduction-consept p {
+  color: #434343;
+  font-size: 1.3rem;
+  line-height: 2.3rem;
+  letter-spacing: 0.02rem;
+  padding: 10px;
+}
+
+
+
+/*-------------------------
+  corporation
+-------------------------*/
+
+.pc-title {
+  display: block;
+}
+
+.sp-title {
+  display: none;
+}
+
+#corporation {
+  padding-top: 65px;
+}
+
+.title-note {
+  padding: 20px;
+}
+
+.field-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#corporation h3 {
+  padding: 0.3rem 0.6rem;
+  border-left: 5px solid #234795;
+  color: #234795;
+  font-size: 2rem;
+  margin-left: 55px;
+  margin-top: 20px;
+}
+
+.field-title {
+  background-color: #234795;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  width: 130px;
+  text-align: center;
+  margin: 20px auto;
+  font-size: 1.4rem;
+}
+
+.field-title-note {
+  background-color: #234795;
+  border-radius: 10px;
+  padding: 5px 10px;
+  color: #fff;
+  width: 130px;
+  text-align: center;
+  margin: 20px auto;
+  margin-right: 57px;
+  font-size: 1.4rem;
+}
+
+.field-box {
+  width: 50%;
+  margin-bottom: 25px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+}
+
+.field-contents::after {
+  width: 35%;
+  display: block;
+  content: "";
+}
+
+.field-area {
+  width: 40%;
+  text-align: center;
+}
+
+.field-box-note {
+  width: 60%;
+  justify-content: flex-start;
+}
+
+.field-img img {
+  border-radius: 10px;
+}
+
+.field-img-note img {
+  border-radius: 10px;
+}
+
+.field-text {
+  width: 40%;
+  height: 260px;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.field-text-note {
+  width: 60%;
+  padding-left: 37px;
+}
+
+.field-box02 {
+  margin-bottom: 70px;
+}
+
+
+/*-------------------------
+  request
+-------------------------*/
+
+.request-contents {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.request-box {
+  width: 260px;
+  margin: 30px;
+}
+
+.request-box h3::first-letter {
+  font-size: 3rem;
+}
+
+.request-box h3 {
+  font-size: 2rem;
+  color: #234795;
+}
+
+.request-box p {
+  font-size: 1.3rem;
+  text-align: justify;
+}
+
+.request-img img {
+  width: 240px;
+}
+
+/*-------------------------
+  reward
+-------------------------*/
+
+
+.reward-contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.reward-box,
+.reward-note {
+  font-size: 1.3rem;
+  margin: 20px 40px;
+}
+
+.reward-box h3,
+#access h3 {
+  padding: 0.3rem 0.6rem;
+  border-left: 5px solid #234795;
+  color: #234795;
+  font-size: 2rem;
+  margin-left: 55px;
+  margin: 20px;
+}
+
+.reward-box {
+  width: 40%;
+}
+
+.reward-box table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.reward-box table,
+.reward-box td,
+.reward-box th {
+  border: solid 3px #fff;
+}
+
+.reward-box td {
+  background-color: #ccd5e8;
+  text-align: center;
+}
+
+.th-note {
+  background-color: #8ea3d1 !important;
+  background-image: none !important;
+}
+
+.reward-box th {
+  background: url("image/bunner-4.jpg") 0 0 / cover no-repeat;
+  color: #fff;
+  padding: 10px;
+}
+
+
+.reward-note {
+  width: 40%;
+  margin-top: 120px;
+}
+
+/*-------------------------
+  access
+-------------------------*/
+
+
+.guide h3 {
+  padding: 0.3rem 0.6rem;
+  border-left: 5px solid #234795;
+  color: #234795;
+  font-size: 3rem;
+  margin-left: 55px;
+  margin: 20px;
+}
+
+.access-map {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
+}
+
+.access-map img {
+  width: 40%;
+}
+
+.access-map img:nth-of-type(3) {
+  width: 65%;
+  margin-top: 40px;
+}
+
+#access {
+  margin-bottom: 120px;
+}
+
+#access table,
+#access td,
+#access th {
+  border: solid 3px #8ea3d1;
+}
+
+#access table {
+  border-collapse: collapse;
+  font-size: 1.5rem;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+}
+
+
+#access th {
+  background: url("image/bunner-4.jpg") 0 0 / cover no-repeat;
+  color: #fff;
+  width: 25%;
+  padding: 20px 0;
+}
+
+/*-------------------------
+  tel
+-------------------------*/
+
+.tel {
+  background-color: #08245d;
+  height: 280px;
+  margin-bottom: 80px;
+}
+
+.pc-tel-box {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  align-items: center;
+}
+
+.pc-tel-box img {
+  width: 30%;
+}
+
+.pc-tel-box img:nth-of-type(2) {
+  margin: 0 40px;
+  width: 25%;
+}
+
+.sp-tel-box {
+  display: none;
+}
+
+/*-------------------------
+  footer
+-------------------------*/
+
+footer nav {
+  background: url("image/bunner.jpg") 0 0 / cover no-repeat;
+  background-color: transparent;
+  height: 200px;
+}
+
+footer nav ul {
+  background-color: transparent;
+}
+
+#scroll-to-top-btn {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 70px;
+  width: 70px;
+  color: #FFF;
+  font-size: 25px;
+  background-color: #9E9E9E;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.sp-link {
+  display: none;
+}
+
+.pc-link {
+  display: block;
+}
+
+
+
+/*-------------------------
+  SP
+-------------------------*/
+
+@media screen and (max-width: 960px) {
+  .request-img img {
+    width: 100%;
+  }
+
+  .intro-contents td {
+    font-size: 1rem;
+  }
+
+  .field-text {
+    font-size: 1rem;
+    line-height: 1.1rem;
+    height: auto;
+  }
+
+  .request-box p {
+    font-size: 1rem;
+  }
+
+  .request-contents {
+    padding: 0;
+  }
+
+  .field-text-note {
+    padding-left: 0;
+  }
+
+  .field-area-note,
+  .field-text-note {
+    margin-left: 0;
+  }
+
+  .reward-box {
+    margin: 20px;
+  }
+
+  .reward-box table {
+    width: 100%;
+  }
+
+  .reward-note {
+    width: 45%;
+  }
+
+  .field-area {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .contents {
+    display: none;
+  }
+
+  .is-open {
+    display: block;
+  }
+
+  .pc-header {
+    display: none;
+  }
+
+  .sp-header {
+    height: 150px;
+    display: block;
+    background: url("image/bunner-3.jpg") 0 0 / cover no-repeat;
+  }
+
+  .sp-header img {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .pc-nav {
+    display: none;
+  }
+
+  .sp-nav {
+    display: block;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+
+  .sp-nav a {
+    background-color: #fd9534;
+    padding: 10px;
+    color: #fff;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 130px;
+    text-align: center;
+    font-weight: bold;
+    padding: 15px 10px;
+    box-shadow: 0 2px 0 rgba(77, 44, 13, 0.45);
+  }
+
+  .line {
+    margin: 0 1rem;
+    width: 3px;
+    background-color: #fd9534;
+  }
+
+  .top-text p:nth-of-type(1) {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .top-text p:nth-of-type(2) {
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  .top-text {
+    top: 25%;
+    right: 15%;
+  }
+
+  .intro-title {
+    font-size: 2rem;
+    padding: 20px 0;
+    margin-top: 0;
+  }
+
+  .intro-contents {
+    flex-direction: column;
+  }
+
+  .intro-contents table {
+    order: 2;
+  }
+
+  .intro-img {
+    order: 1;
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .intro-img img {
+    width: 100%;
+  }
+
+  .intro-contents th {
+    font-size: 1.4rem;
+    width: 26%;
+  }
+
+  .intro-contents td {
+    font-size: 1rem;
+  }
+
+  .intro-contents table {
+    margin: auto;
+    margin-top: 5px;
+    height: 250px;
+  }
+
+  caption {
+    font-size: 1rem;
+  }
+
+  .margin-note {
+    margin-bottom: 0;
+  }
+
+  .introduction-consept h2 {
+    font-size: 1.5rem;
+  }
+
+  .introduction-consept p {
+    font-size: 1rem;
+    line-height: 1.6rem;
+  }
+
+  .introduction-consept {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+  }
+
+  #corporation {
+    padding-top: 0;
+  }
+
+  .pc-title {
+    display: none;
+  }
+
+  .sp-title {
+    display: block;
+  }
+
+  #corporation h3 {
+    display: none;
+  }
+
+  .field-contents {
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+  }
+
+
+
+  .field-text,
+  .field-box,
+  .field-area,
+  .field-img-note {
+    width: 100%;
+  }
+
+  .field-img,
+  .field-img-note {
+    text-align: center;
+  }
+
+  .field-img img,
+  .field-img-note img {
+    width: 70%;
+  }
+
+
+
+  .field-box {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+
+  .field-text {
+    height: auto;
+    font-size: 1rem;
+  }
+
+  .field-box-note {
+    margin-left: 0;
+  }
+
+  .field-text-note {
+    padding-left: 0;
+  }
+
+  .field-title-note {
+    margin: 20px auto;
+  }
+
+  .request-contents {
+    display: inline-block;
+    padding: 20px;
+    margin-top: 0;
+  }
+
+  .request-box {
+    width: 100%;
+  }
+
+  .request-img {
+    text-align: center;
+  }
+
+  .request-img img {
+    width: 70%;
+  }
+
+  .request-box p {
+    font-size: 1rem;
+  }
+
+  .request-box {
+    margin: 0;
+  }
+
+  .reward-contents {
+    display: inline-block;
+    padding: 20px;
+  }
+
+  .reward-box {
+    margin: 0;
+  }
+
+  .reward-box h3 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 0;
+    font-size: 1.5rem;
+  }
+
+  .reward-box,
+  .reward-note {
+    font-size: 1rem;
+  }
+
+  .reward-box table {
+    width: 320px;
+    margin: auto;
+  }
+
+  .reward-note {
+    margin: 0;
+    width: 100%;
+    font-size: 0.8rem;
+  }
+
+  .reward-box th {
+    width: 100px;
+  }
+
+  .guide {
+    padding: 20px;
+  }
+
+  #access {
+    margin-bottom: 0;
+  }
+
+  .guide h3,
+  #access h3 {
+    font-size: 1.5rem;
+  }
+
+  #access h3 {
+    margin-left: 0;
+  }
+
+  #access table {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .access-map {
+    display: inline-block;
+  }
+
+  .access-map img {
+    width: 100%;
+  }
+
+  .access-map img:nth-of-type(3) {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .tel {
+    height: auto;
+    margin-bottom: 0;
+  }
+
+  .pc-tel-box {
+    display: none;
+  }
+
+  .sp-tel-box {
+    display: block;
+    text-align: center;
+  }
+
+  .sp-tel-box img {
+    width: 100%;
+  }
+
+  .sp-tel-box img:nth-of-type(3) {
+    width: 60%;
+  }
+
+  footer nav {
+    height: 100px;
+  }
+
+  footer nav ul {
+    width: 80%;
+    margin: auto;
+  }
+
+  footer nav li {
+    padding: 2px;
+    text-align: center;
+    font-size: 0.5rem;
+  }
+
+  .sp-link {
+    display: block;
+  }
+
+  .pc-link {
+    display: none;
+  }
+}
